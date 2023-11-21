@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+    <script src="https://kit.fontawesome.com/37b9e1bfc7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="bg-sky-300 mx-auto w-full rounded-md shadow-slate-400 shadow-2xl md:w-3/4 my-10 text-center pt-4 pb-10">
+        <section class="w-full md:w-3/4 mx-auto">
+            <h2 class="text-4xl font-bold mb-5">Simple Text Editor</h2>
+            <div class="bg-sky-100 border-2 border-[#64748b] rounded-sm p-5 pt-0">
+                <div class="flex items-center justify-around border-b-2 border-[#64748b] py-5 mb-5">
+                    <div class="flex items-center gap-6">
+                        <span><i class="fa-solid fa-bold"></i></span>
+                        <span><i class="fa-solid fa-italic"></i></span>
+                        <span><i class="fa-solid fa-underline"></i></span>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <span><i class="fa-solid fa-align-left"></i></span>
+                        <span><i class="fa-solid fa-align-center"></i></span>
+                        <span><i class="fa-solid fa-align-right"></i></span>
+                        <span><i class="fa-solid fa-align-justify"></i></span>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <input id="" class="w-10 bg-transparent outline-0 font-medium" type="number" name="" value="17">
+                        <span class="ms-[-20px]"><i class="fa-solid fa-a"></i></span>
+                        <input type="color" name="" id="">
+                    </div>
+                </div>
+                <div class="border-2 border-[#9ca3af] rounded-sm">
+                    <textarea class="w-full block px-3 py-2 text-lg outline-0" name="" id="" cols="30" rows="15"></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
