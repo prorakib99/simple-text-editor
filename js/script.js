@@ -32,7 +32,7 @@
         const fontValue = this.value;
         textField.style.fontSize = `${fontValue}px`;
     })
-    document.getElementById('color-value').addEventListener('blur', function(){
+    document.getElementById('color-value').addEventListener('input', function(){
         const colorValue = this.value;
         textField.style.color = colorValue;
     })
