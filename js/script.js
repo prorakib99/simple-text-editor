@@ -44,19 +44,14 @@
     function handleListClick(event) {
     const clickedItem = event.target;
 
-    // Check if a list item was clicked
     if (clickedItem.classList.contains('item-click')) {
         const currentIndex = Array.from(clickedItem.parentNode.children).indexOf(clickedItem);
-
-        // Remove active class from the currently active item
+        
         if (activeIndex !== null) {
         clickedItem.parentNode.children[activeIndex].classList.remove('font-bold');
         }
 
-        // Toggle active class for the clicked item
         clickedItem.classList.toggle('font-bold');
-
-        // Update the active index
         activeIndex = clickedItem.classList.contains('font-bold') ? currentIndex : null;
     }
     }
